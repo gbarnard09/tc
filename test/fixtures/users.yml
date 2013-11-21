@@ -3,3 +3,10 @@ ashley:
    last_name: "Birnbaum"
    email: "ashley.m.birnbaum@gmail.com"
    profile_name: "ashmich"
+
+
+freebird:	
+   first_name: "Free"
+   last_name: "Bird"
+   email: "freebird@gmail.com"
+   profile_name: "freebird_king"

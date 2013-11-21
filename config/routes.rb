@@ -1,8 +1,21 @@
 Trendcommons::Application.routes.draw do
+  get "profiles/show"
+
   devise_for :users
 
+  devise_scope :user do
+    get 'register', to: 'devise/registrations#new', as: :register 
+    get 'login', to: 'devise/sessions#new', as: :login
+    get 'logout', to: 'devise/sessions#destroy', as: :logout
+    get  'edit_profile', to: 'devise/registrations#edit', as: :edit_profile
+
+  end
+
   resources :statuses
+      get 'latest', to: 'statuses#index', as: :latest
   root to: 'statuses#index'
+
+  get '/:id', to: 'profiles#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

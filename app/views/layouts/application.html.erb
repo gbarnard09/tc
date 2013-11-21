@@ -12,15 +12,15 @@
 			<div class="container">
 				<a class="brand" href="#"> TrendCommons</a>
 				<ul class="nav">
-					<li><%= link_to "the latest", statuses_path %></li>
+					<li><%= link_to "the latest", latest_path %></li>
 				</ul>
 				<ul class="nav pull-right">
 					<% if user_signed_in? %>
-						<li><%= link_to current_user.profile_name, edit_user_registration_path %></li>
-						<li><%= link_to "log out", destroy_user_session_path, method: :delete %></li>
+						<li><%= link_to current_user.profile_name, edit_profile_path %></li>
+						<li><%= link_to "log out", logout_path %></li>
 					<% else %>
-						<li><%= link_to "register", new_user_registration_path %></li>
-						<li><%= link_to "sign in", new_user_session_path %> 	
+						<li><%= link_to "register", register_path %></li>
+						<li><%= link_to "log in", login_path %> 	
 					<% end %>
 
 
@@ -29,8 +29,16 @@
 		</div>
 	</div>
 	<div class="container">
-		<p class="notice"><%= notice %></p>
-    	<p class="alert"><%= alert %></p>
+		<% flash.each do |type, message| %>
+			<div class="alert <%= flash_class type %>">
+				<button class="close" data-dismiss="alert">x</button>
+				<%= message %>
+			</div>	
+		<% end %>
+		
+
+
+
 		<%= yield %><br/>
 	</div>
 
