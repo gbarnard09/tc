@@ -1,19 +1,19 @@
 
-<div class="row" style="margin-top: 30px;">
+<div class="row large-main" style="margin-top: 30px;">
 	<div class="span4">
 	<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: {class: "well"}) do |f| %>
 
 		<fieldset>
 			<legend>log in</legend>
-		<%= f.input :email %>
-		<%= f.input :password %>
+			<%= f.input :email %>
+			<%= f.input :password %>
 
 
-	  <% if devise_mapping.rememberable? -%>
-	    <div><%= f.input :remember_me, as: :boolean %></div>
-	  <% end -%>
+			  <% if devise_mapping.rememberable? -%>
+			    <div><%= f.input :remember_me, as: :boolean %></div>
+			  <% end -%>
 
-	  <div><%= f.button :submit, "Sign in", :class => 'btn btn-info' %></div>
+			  <div><%= f.button :submit, "Sign in", :class => 'btn btn-inverse' %></div>
 
 		</fieldset>
 	<% end %>
@@ -23,7 +23,7 @@
 	<div class="span1">
 	</div>	
 	<div class="span7">
-		<h2>how trendy are you?</h2>
-		<img src="http://thumbs.dreamstime.com/z/man-male-woman-female-fashion-shopping-model-17834562.jpg" alt="TrendCommons" width="350px" height="350px">
+		<h2 class="text-trendy">how trendy are you?</h2>
+		<img class="pic-main" src="http://thumbs.dreamstime.com/z/man-male-woman-female-fashion-shopping-model-17834562.jpg" alt="TrendCommons" width="375px" height="375px">
 	</div>	
 </div>

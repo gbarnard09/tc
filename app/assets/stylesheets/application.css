@@ -19,3 +19,23 @@ body {
 .alert	{
 	margin-top: 15px;
 }
+
+.large-main {
+	padding: 15px 0px 15px 10px;
+}
+
+
+.pic-main {
+	margin-left: 120px;
+}
+
+.text-trendy {
+	margin-left: 130px;
+	margin-top: -5px
+}
+
+.snow {
+  width: 100%;	
+  background-color: #f2f9f8;
+}
+

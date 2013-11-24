@@ -22,26 +22,25 @@
 						<li><%= link_to "register", register_path %></li>
 						<li><%= link_to "log in", login_path %> 	
 					<% end %>
-
-
 				</ul>	
-			</div>
+				</div>
 		</div>
 	</div>
-	<div class="container">
-		<% flash.each do |type, message| %>
-			<div class="alert <%= flash_class type %>">
-				<button class="close" data-dismiss="alert">x</button>
-				<%= message %>
-			</div>	
-		<% end %>
-		
+	<div class="snow">	
+		<div class="container">
+			<% flash.each do |type, message| %>
+				<div class="alert <%= flash_class type %>">
+					<button class="close" data-dismiss="alert">x</button>
+					<%= message %>
+				</div>	
+			<% end %>
+			
 
 
 
-		<%= yield %><br/>
-	</div>
-
+			<%= yield %><br/>
+		</div>
+	</div>	
 
 </body>
 </html>
