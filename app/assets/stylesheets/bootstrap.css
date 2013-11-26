@@ -4373,7 +4373,7 @@ input[type="submit"].btn.btn-mini {
   min-height: 40px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: #fafafa;
+  background-color: #4A9586;
   background-image: -moz-linear-gradient(top, #4A9586, #4A9586);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4A9586), to(#4A9586));
   background-image: -webkit-linear-gradient(top, #4A9586, #4A9586);
@@ -4622,7 +4622,7 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  color: #333333;
+  color: #A5D3CA;
   text-decoration: none;
   background-color: transparent;
 }
@@ -6163,3 +6163,4 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
+

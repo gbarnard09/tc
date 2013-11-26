@@ -10,11 +10,11 @@
       </ul>
     </div>
   <% end %>
-  <%= f.input :user_id, collection: User.all, label_method: :profile_name %>
+  
   <%= f.input :content %>
 
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, :class => 'btn-stat'%>
   </div>
 <% end %>

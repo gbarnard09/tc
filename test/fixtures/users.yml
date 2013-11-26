@@ -10,3 +10,10 @@ freebird:
    last_name: "Bird"
    email: "freebird@gmail.com"
    profile_name: "freebird_king"
+
+
+vodka:
+   first_name: "Vodka"
+   last_name: "Tonic"
+   email: "vodkatonic@gmail.com"
+   profile_name: "vodka_tonic"   

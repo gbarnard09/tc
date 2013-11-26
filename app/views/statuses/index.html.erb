@@ -1,8 +1,14 @@
-<div class="page-header">
-  <h1>the latest</h1>
-</div>
+<div class="container" style="margin-top:  25px;">
+  <div class="span3">
+    <h1>the latest</h1>
+   </div>
+   <div class="span8">
+    <%= link_to "new status", new_status_path, class: "btn-stat"%>
+   </div>
+</div>    
+<div class="page-header" style="margin-top: -10px; border-color: #4a9586"></div>
 
-<%= link_to "new status", new_status_path, class: "btn btn-info"%>
+
 
 <% @statuses.each do |status| %>
 <div class="status">
