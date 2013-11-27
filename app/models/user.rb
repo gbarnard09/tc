@@ -21,8 +21,8 @@ class User < ActiveRecord::Base
 
 
 
-  has_many :statuses
-  has_many :user_friendships
+  has_many :statuses, :dependent => :destroy, :order => "created_at DESC"
+  has_many :user_friendships, :dependent => :destroy
   has_many :friends, through: :user_friendships
 
   def full_name
@@ -36,6 +36,15 @@ class User < ActiveRecord::Base
     hash = Digest::MD5.hexdigest(downcased_email)
 
     "http://gravatar.com/avatar/#{hash}"
+
+  end  
+
+ def gravatar_url_profile
+    stripped_email = email.strip
+    downcased_email = stripped_email.downcase
+    hash = Digest::MD5.hexdigest(downcased_email)
+
+    "http://gravatar.com/avatar/#{hash}?size=150"
 
   end  
 

@@ -1,8 +1,10 @@
 <div class="page-header">
-	<h1><%= @user.profile_name %></h1>
-
+	<div class="container">
+		<div><h1><%= @user.profile_name %></h1></div>
+		<div><%= image_tag @user.gravatar_url_profile %></div>
+	</div>	
 </div>	
-
+	
 
 <% if @statuses %>
 	<% @statuses.each do |status| %>

@@ -3873,6 +3873,8 @@ input[type="submit"].btn.btn-mini {
           border-radius: 0 0 6px 6px;
 }
 
+
+
 .alert {
   padding: 8px 35px 8px 14px;
   margin-bottom: 20px;
@@ -4374,11 +4376,11 @@ input[type="submit"].btn.btn-mini {
   padding-right: 20px;
   padding-left: 20px;
   background-color: #4A9586;
-  background-image: -moz-linear-gradient(top, #4A9586, #4A9586);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4A9586), to(#4A9586));
-  background-image: -webkit-linear-gradient(top, #4A9586, #4A9586);
-  background-image: -o-linear-gradient(top, #4A9586, #4A9586);
-  background-image: linear-gradient(to bottom, #4A9586, #4A9586);
+  background-image: -moz-linear-gradient(top, #4A9586, #1291B9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4A9586), to(#1291B9));
+  background-image: -webkit-linear-gradient(top, #4A9586, #1291B9);
+  background-image: -o-linear-gradient(top, #4A9586, #1291B9);
+  background-image: linear-gradient(to bottom, #4A9586, #1291B9);
   background-repeat: repeat-x;
   border: 1px solid #d4d4d4;
   -webkit-border-radius: 4px;

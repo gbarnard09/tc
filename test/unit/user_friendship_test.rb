@@ -16,6 +16,7 @@ test "that creating a friendship works wthout raising an exception" do
 test "that creating a friendship based on a user id and friend id works"	do
 
 	UserFriendship.create user_id: users(:ashley).id, friend_id: users(:freebird).id
+	assert users(:ashley).friends.include?(users(:freebird))
 
   end
 end
