@@ -2,9 +2,10 @@
 	<div class="container">
 		<div><h1><%= @user.profile_name %></h1></div>
 		<div><%= image_tag @user.gravatar_url_profile %></div>
-	</div>	
+		<div><%= link_to "Add Friend", new_user_friendship_path(friend_id: @user), class: 'btn-stat pro-chill'%></div>
+	</div>
 </div>	
-	
+
 
 <% if @statuses %>
 	<% @statuses.each do |status| %>

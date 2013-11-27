@@ -3,7 +3,7 @@
     <h1>the latest</h1>
    </div>
    <div class="span8">
-    <%= link_to "new status", new_status_path, class: "btn-stat"%>
+    <%= link_to "new status", new_status_path, class: "btn-stat shifty"%>
    </div>
 </div>    
 <div class="page-header" style="margin-top: -10px; border-color: #4a9586"></div>
@@ -14,11 +14,11 @@
 <div class="status">
   <div class="row">
     <div class="span1">
-      <%= image_tag status.user.gravatar_url  %>
+      <%= link_to image_tag(status.user.gravatar_url), profile_path(status.user)  %>
     </div>
      
     <div class="span7">
-      <strong><%=status.user.profile_name %></strong>
+      <strong><%=link_to status.user.profile_name, profile_path(status.user) %></strong>
       <p><%= status.content %></p>
       <div class="meta">
         <%= link_to time_ago_in_words(status.created_at) + " ago", status %>

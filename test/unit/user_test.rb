@@ -73,5 +73,9 @@ class UserTest < ActiveSupport::TestCase
 	
 	end
 
+	test "that calling to_param on a user shows profile name" do
+		assert_equal "ashmich", users(:ashley).to_param
+	end	
+
 end
 

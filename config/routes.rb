@@ -11,11 +11,14 @@ Trendcommons::Application.routes.draw do
 
   end
 
+  resources :user_friendships
+
+
   resources :statuses
       get 'latest', to: 'statuses#index', as: :latest
   root to: 'statuses#index'
 
-  get '/:id', to: 'profiles#show'
+  get '/:id', to: 'profiles#show', as: 'profile'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
