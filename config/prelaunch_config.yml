@@ -5,6 +5,6 @@ test:
   active: false
 
 production:
-  active: false
+  active: true
 # campaign_monitor_api_key:
 # campaign_monitor_list_id:
