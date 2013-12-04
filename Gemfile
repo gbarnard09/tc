@@ -8,7 +8,7 @@ gem 'rails', '3.2.12'
 
 gem 'devise'
 gem 'simple_form'
-gem 't-minus'
+
 
 
 group :test do
@@ -22,6 +22,7 @@ end
 
 group :production do
 	gem "pg"
+	gem 't-minus'
 end	
 
 # Gems used only for assets and not required
