@@ -1,8 +1,8 @@
 development:
-  active: false
+  active: true
 
 test:
-  active: false
+  active: true
 
 production:
   active: true
