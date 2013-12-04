@@ -8,7 +8,7 @@ gem 'rails', '3.2.12'
 
 gem 'devise'
 gem 'simple_form'
-
+gem 't-minus'
 
 
 group :test do
@@ -17,7 +17,7 @@ end
 
 group :development, :test do
 	gem 'sqlite3'
-	gem 't-minus'
+	
 end
 
 group :production do
