@@ -16,4 +16,4 @@ end
 class ActionController::TestCase
 	include Devise::TestHelpers
 
-end
+endrequire 't-minus/test_helper'
