@@ -146,5 +146,5 @@ DEPENDENCIES
   shoulda
   simple_form
   sqlite3
-  t-minus
+  t-minus (~> 0.3.1)
   uglifier (>= 1.0.3)
