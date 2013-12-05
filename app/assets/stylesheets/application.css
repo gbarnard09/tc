@@ -42,7 +42,7 @@ body {
 
     .btn-stat {
         
-        background-color:#4a9586;
+        background-color:#ff8c00;
         -moz-border-radius:28px;
         -webkit-border-radius:28px;
         border-radius:28px;
@@ -59,14 +59,14 @@ body {
     }
     .btn-stat:hover {
         
-        background-color:#4a9586;
+        background-color:#ff8c00;
         color: #A5D3CA;
         text-decoration: none;
     }
     .btn-stat:active {
         position:relative;
         top:1px;
-        background-color:#4a9586;
+        background-color:#ff8c00;
     }
 
     .shifty {
