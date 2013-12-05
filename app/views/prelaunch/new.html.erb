@@ -1,21 +1,24 @@
 <div class="splash2">
-
+    <h1>We're launching soon.</h1>
 </div>  
-
+<div class="spacer"></div>
 <div class="splash1">
-<% if flash[:notice] %>
-  <%= flash[:notice].html_safe %>
-<% else %>
-  <p>Our new website is launching soon.</p>
-  <p>Add your name to the list and you will be the first to know when we are ready.</p>
-  <%= form_for @prelaunch_subscriber, :url => prelaunch_path do |f| %>
-      <%= f.text_field :email %>
-      <% if @prelaunch_subscriber.errors[:email] %>
-        <div class="form-error"><%= @prelaunch_subscriber.errors[:email].first %></div>
-      <% end %>
-    <div class="actions">
-      <%= f.submit 'Add me to the list', :class => "btn-stat" %>
+
+    <div class="summer"> 
+    <form action="http://trendcommons.createsend.com/t/d/s/ijlyl/" method="post">
+        <div class="autumn">
+            <label class="flabel" for="fieldName">Name<span class="asterik">*</span></label><br />
+            <input class="ffield" id="fieldName" name="cm-name" type="text" required/><br /><br />
+        
+            <label class="flabel" for="fieldEmail">Email<span class="asterik">*</span></label><br />
+            <input class="ffield" id="fieldEmail" name="cm-ijlyl-ijlyl" type="email" required /><br /><br />
+            <br />
+       
+            <button class="btn-stat" type="submit">Add Me to the List</button>
+        </div>
+    </form>
     </div>
- </div>   
-  <% end %>
-<% end %>
+ </div> 
+ <div class="spacer"></div>  
+
+

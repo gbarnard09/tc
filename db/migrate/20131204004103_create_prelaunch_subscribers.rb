@@ -1,12 +1,12 @@
 class CreatePrelaunchSubscribers < ActiveRecord::Migration
-  def self.up
+  def change
     create_table(:prelaunch_subscribers) do |t|
       t.string :email
       t.timestamps
     end
   end
 
-  def self.down
+  def change
     drop_table :prelaunch_subscribers
   end
 end
