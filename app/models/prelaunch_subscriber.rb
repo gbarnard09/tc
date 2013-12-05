@@ -1,4 +1,5 @@
 class PrelaunchSubscriber < ActiveRecord::Base
+  attr_accessible :email
   validates_presence_of :email, :message => 'Please enter your email address first.'
   validates_uniqueness_of :email, :message => 'That email is already on the list.'
   validates_format_of :email,
