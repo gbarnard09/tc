@@ -18,11 +18,12 @@
 				</ul>
 				<ul class="nav pull-right">
 					<% if user_signed_in? %>
+						<li><%= link_to 'friends', user_friendships_path %></li>
 						<li><%= link_to current_user.profile_name, edit_profile_path %></li>
 						<li><%= link_to "log out", logout_path %></li>
 					<% else %>
 						<li><%= link_to "register", register_path %></li>
-						<li><%= link_to "log in", login_path %> 	
+						<li><%= link_to "log in", login_path %> </li>	
 					<% end %>
 				</ul>	
 				</div>

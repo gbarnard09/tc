@@ -2,6 +2,26 @@ require 'test_helper'
 
 class UserFriendshipsControllerTest < ActionController::TestCase
 
+	context "#index"  do
+		context "when not logged in" do
+			should "redirect to the login page" do
+			get :index
+			assert_response :redirect
+			end	
+		end
+
+
+
+	context "when logged in" do
+		setup do
+			
+		end	
+	end	
+	end	
+
+
+
+
 	context "#new"  do
 		context "when not logged in" do
 			should "redirect to the login page" do
@@ -105,7 +125,7 @@ class UserFriendshipsControllerTest < ActionController::TestCase
 	  	end	
 	  
 	  	should "create a friendship" do
-	  		assert users(:ashley).friends.include?(users(:freebird))
+	  		assert users(:ashley).pending_friends.include?(users(:freebird))
 	  	end	
 	  
 	  	should "redirect to the profile page of the friend" do

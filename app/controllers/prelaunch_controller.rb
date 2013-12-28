@@ -1,6 +1,10 @@
 class PrelaunchController < ActionController::Base
   layout 'prelaunch'
 
+  def thanks
+    @prelaunch_subscriber = PrelaunchSubscriber.new
+  end  
+   
   def new
     @prelaunch_subscriber = PrelaunchSubscriber.new
   end

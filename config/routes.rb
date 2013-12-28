@@ -1,4 +1,5 @@
 Trendcommons::Application.routes.draw do
+
   get "profiles/show"
 
 
@@ -21,8 +22,12 @@ Trendcommons::Application.routes.draw do
 
   end  
 
-  resources :user_friendships
-
+  resources :user_friendships do
+    member do
+      put :accept
+    end  
+  end  
+  
 
   resources :statuses
       get 'latest', to: 'statuses#index', as: :latest
@@ -87,3 +92,6 @@ Trendcommons::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
 end
+
+
+

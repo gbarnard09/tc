@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
-    <title><%= Rails.application.class.to_s.split('::').first.titleize %></title>
+   <title>TrendCommons</title>
     
     <%= stylesheet_link_tag    "prelaunch", :media => "all" %>
     <%= csrf_meta_tag %>
   </head>
-  <body>
+  <body class="plbody">
     <%= yield %>
   </body>
 </html>
