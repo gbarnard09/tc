@@ -10,6 +10,7 @@ gem 'devise'
 gem 'simple_form'
 gem 't-minus', '~>0.3.1'
 gem 'state_machine'
+gem 'draper'
 
 
 group :test do
