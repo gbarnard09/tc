@@ -2,7 +2,16 @@
 	<div class="container">
 		<div><h1><%= @user.profile_name %></h1></div>
 		<div><%= image_tag @user.gravatar_url_profile %></div>
-		<div><%= link_to "Add Friend", new_user_friendship_path(friend_id: @user), class: 'btn-stat pro-chill'%></div>
+		
+	<% if signed_in? %>	
+		<div id="friend-status">
+			<% if current_user.friends.include?(@user) %>
+				<%= link_to "Modify Friendship", edit_user_friendship_path(friend_id: @user), class: "btn-stat pro-chill" %>
+			<% else %>
+				<%= link_to "Add Friend", new_user_friendship_path(friend_id: @user), class: 'btn-stat pro-chill', id: 'add-friendship', data: { friend_id: @user.to_param } %>
+			<% end %>
+		</div>
+	<% end %>	
 	</div>
 </div>	
 

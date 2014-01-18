@@ -2,22 +2,21 @@
   <div class="span3">
     <h1>the latest</h1>
    </div>
-   <div class="span8">
-    <%= link_to "new status", new_status_path, class: "btn-stat shifty"%>
-   </div>
+   
 </div>    
 <div class="page-header" style="margin-top: -10px; border-color: #4a9586"></div>
 
 
-
+<div class="container" style="width: 470px; display: block; margin-right: 470px;">
 <% @statuses.reverse_each do |status| %>
+<div class="span6">
 <div class="status">
   <div class="row">
     <div class="span1">
       <%= link_to image_tag(status.user.gravatar_url), profile_path(status.user)  %>
     </div>
      
-    <div class="span7">
+    <div class="span3">
       <strong><%=link_to status.user.profile_name, profile_path(status.user) %></strong>
       <p><%= status.content %></p>
       <div class="meta">
@@ -30,7 +29,72 @@
     </div>
   </div>  
 </div>
+</div>
+
+
+
 
 
 
 <% end %>
+
+ <div style="width: 400px; height: 500px; border: 2px solid rgb(122, 69, 122); margin-left: 540px; background-color: #eff9f4;">   
+  <h2 style="margin-left: 15px;">
+    TrendDash
+  </h2> 
+   
+  <% if user_signed_in? %>
+ <div style="margin-left: 250px; margin-top: -45px;"> <%= link_to "new status", new_status_path, class: "btn-stat"%>
+ </div>
+    <div class="span3" style="margin-left: 250px; margin-top: -60px;">
+      
+     </div>
+  <hr class="style-seven" style="width:95%; margin-left: auto; margin-right: auto;">
+  
+    <div style="margin-top: -20px; margin-left: -175px;">
+      <h4 style="margin-left: 215px;">TrendScore</h4>
+      <div id="ts-circle">
+        <h2 style="margin-left: 35%; padding-top: 30%;">42</h2>
+      </div> 
+    
+      <h4 style="margin-left: 430px; margin-top: -153px;">Badges</h4>
+    </div>
+      
+  <% else %>
+  <hr class="style-seven" style="width:95%; margin-left: auto; margin-right: auto;">
+  <%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: {class: "well", style: "border: 0px; background-color: #eff9f4; margin-top: -30px; border: 0px;"}) do |f| %>
+
+    <fieldset>
+      <%= f.input :email, label: 'email', input_html: { style: 'width: 350px;'} %>
+      <%= f.input :password, label: 'password', input_html: { style: 'width: 350px;'}, label_html: { style: 'margin-top: -15px;'} %>
+
+        <div><%= f.button :submit, "sign in", :class => 'btn btn-success btn-block' %></div>
+
+    </fieldset>
+  <% end %>
+
+  <% end %>  
+
+
+
+
+
+
+
+
+
+</div>
+  
+
+
+
+
+
+
+</div>
+
+
+
+
+
+

@@ -11,6 +11,7 @@ gem 'simple_form'
 gem 't-minus', '~>0.3.1'
 gem 'state_machine'
 gem 'draper'
+gem 'js-routes'
 
 
 group :test do

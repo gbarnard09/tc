@@ -10,11 +10,11 @@ class UserFriendshipDecoratorTest < Draper::TestCase
 			end	
 
 
-			should "return Pending" do
-				assert_equal "Pending", @decorator.friendship_state
-			end	
-		end	
-	end
+	should "return Pending" do
+		assert_equal "Pending", @decorator.friendship_state
+	end			
+   end	
+  end
 		
 
 end

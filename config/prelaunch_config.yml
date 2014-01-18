@@ -5,7 +5,7 @@ test:
   active: false
 
 production:
-  active: true
+  active: false
 
  #campaign_monitor_api_key: a67beeaa3bdb7c2b4efa4013c0bb1b19
  #campaign_monitor_list_id: e7727acae9ce6f67b17b6772ea1d14cd

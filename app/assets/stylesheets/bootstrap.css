@@ -8,6 +8,8 @@
  * Designed and built with all the love in the world by @mdo and @fat.
  */
 
+
+
 .clearfix {
   *zoom: 1;
 }
@@ -6165,4 +6167,40 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
+
+<a href="#" class="myButton">green</a>
+
+.myButton {
+  background-color:#731573;
+  -moz-border-radius:28px;
+  -webkit-border-radius:28px;
+  border-radius:28px;
+  border:1px solid #731573;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:arial;
+  font-size:17px;
+  padding:13px 76px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #000000;
+}
+.myButton:hover {
+  background-color:#ffffff;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+ #ts-circle {
+  border-radius: 50%;
+  background-color: #38DD81;
+  height: 125px;
+  width: 125px;
+  margin-left: 200px; 
+
+ }
+
+
 
